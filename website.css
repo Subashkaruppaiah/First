@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 4px solid blue; */
+}
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #dfe9f3;
+    overflow: hidden;
+    
+    display: flex;
+}
+/* logo */
+.logo-container{
+     position: relative;
+    width: 300px;
+    animation: slideup 1s ease;
+   
+}
+/* logo-container inside img */
+.logo-container img{
+     height: 100px;
+    padding: 20px 40px;
+    
+}
+/*User Input  */
+#inp{
+    font-size: 17px;
+border-radius: 30px;
+padding: 5px 10px;
+}
+/******************midle div***********************/
+ 
+.content{
+     position: relative;
+    background-image: url(world.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    background-position: center;
+    height: 78vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Welcome Content */
+.content h1{
+    
+    left: 10px;
+    top: 5px;
+    
+    
+}
+/* Dropdown */
+#order-drop{
+     
+    outline: none;
+    border-radius: 20px;
+    width: 320px;
+ margin :30px 0px 70px 0px;
+ padding: 10px 20px;
+ background: transparent;
+ font-size: 1em;
+ animation:  dropdownfade 1s ease;
+
+}
+  #order-drop option{
+background-color: #dfe9f375;
+  }
+/* Login Details sys veda*/
+.input {
+     
+    padding:35px 30px 30px 30px;
+    width: 400px;
+    height: 300px;
+    background-color: #dfe9f375;
+    backdrop-filter: blur(1px);
+  
+}
+#inp{
+    background: transparent;
+    margin-top: 20px;
+    
+}
+  
+/* hover */
+ 
+.input:hover #order-drop
+{
+    cursor: pointer;
+}
+ 
+  /* Footer */
+ footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: slideup 1s ease;
+  }
+  /* Animation */
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideup {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  
+  @keyframes dropdownfade {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
